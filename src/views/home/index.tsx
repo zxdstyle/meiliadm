@@ -8,6 +8,7 @@ type IndexProps = {
     children?: React.ReactNode;
 };
 
+
 const Index: React.FC<IndexProps> = ({ children }) => {
     return (
         <Container maxW="container.md" w="full" h="full" py={12}>
@@ -20,7 +21,7 @@ const Index: React.FC<IndexProps> = ({ children }) => {
                 </Box>
             </Box>
 
-            <SimpleGrid mt={6} columns={3}>
+            <SimpleGrid mt={6} columns={1} justifyContent="center">
                 <CreateConnection />
             </SimpleGrid>
         </Container>
