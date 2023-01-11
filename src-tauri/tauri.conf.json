@@ -28,7 +28,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.meiliadm.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -55,11 +55,13 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
         "resizable": true,
-        "title": "meiliadm",
-        "width": 800,
-        "titleBarStyle": "transparent"
+        "width": 1000,
+        "height": 700,
+        "minWidth": 800,
+        "minHeight": 500,
+        "hiddenTitle": true,
+        "titleBarStyle": "Overlay"
       }
     ]
   }
