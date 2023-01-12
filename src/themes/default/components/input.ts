@@ -1,9 +1,7 @@
-import { baseTheme } from '@chakra-ui/react';
+import { ComponentStyleConfig } from '@chakra-ui/react';
 
-export const inputStyles = {
-    components: {
-        Input: {
-            defaultProps: {},
-        },
-    },
+const inputStyles: ComponentStyleConfig = {
+    defaultProps: {},
 };
+
+export default inputStyles;
