@@ -5,7 +5,7 @@ import { cli } from '@tauri-apps/api';
 const connectionCacheKey = 'meiliadm-store-connections';
 const clients = new Map<string, MeiliSearch>();
 
-export const connections = () => {
+export const connections = (): Record<string, Connection> => {
     return getStorage(connectionCacheKey) || {};
 };
 
