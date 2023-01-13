@@ -7,11 +7,9 @@ type IndexProps = {
 const Index: React.FC<IndexProps> = ({ children }) => {
     const getClient = async () => {
         const client = getConnection('111');
-        const page = await client?.getIndex('pages');
-        if (!page) return;
 
-        const info = await page.fetchInfo();
-        console.log(info);
+        console.log(await client?.getStats());
+        console.log(await client?.getIndexes());
     };
 
     useEffect(() => {
